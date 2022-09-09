@@ -605,9 +605,7 @@ License: For each use you must have a valid license purchased only from above li
 					data: form_data,
 					dataType: "json",
 					success: function(data) {
-
 						console.log(data);
-
 
 					}
 				});

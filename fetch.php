@@ -3,7 +3,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/simple-calendar/db.php');
 
 $message = '';
 
-if(isset($_POST['calendar_event_name'])){
+if(isset($_POST['calendar_event_name']) && $_POST['calendar_event_name'] != null){
 
     $name_event = $_POST['calendar_event_name'];
     $description_event = $_POST['calendar_event_description'];
