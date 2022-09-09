@@ -6,6 +6,7 @@ $.ajax({
 
         var events = [data.length];
         A = () => Date.now().toString() + Math.floor(1e3 * Math.random()).toString();
+
         for (let i = 0; i < data.length; i++) {
             // var todayDate = moment().startOf('day');
             // var TODAY = todayDate.format('YYYY-MM-DD');
@@ -20,25 +21,58 @@ $.ajax({
             // } else {
             //     className = "fc-event-success"
             // }
-            events[i] = {
-                // title: data[i].nom,
-                // start: data[i].date_debut,
-                // description: (data[i].description == null) ? data[i].nom : data[i]
-                //     .description,
-                // end: data[i].date_fin,
-                // className: className
-                id: A(),
-                title: data[i].name_event,
-                start: data[i].date_start_event + ' ' + data[i].time_start_event,
-                end: data[i].date_end_event + ' ' + data[i].time_end_event,
-                description: data[i].description_event,
-                className: '',
-                location: data[i].location_event
+            if(data[i].time_start_event == null){
+
+                events[i] = {
+                    // title: data[i].nom,
+                    // start: data[i].date_debut,
+                    // description: (data[i].description == null) ? data[i].nom : data[i]
+                    //     .description,
+                    // end: data[i].date_fin,
+                    // className: className
+                    id: A(),
+                    title: data[i].name_event,
+                    start: data[i].date_start_event,
+                    end: data[i].date_end_event,
+                    description: data[i].description_event,
+                    className: '',
+                    location: data[i].location_event
+                }
+
+            }else{
+                events[i] = {
+                    // title: data[i].nom,
+                    // start: data[i].date_debut,
+                    // description: (data[i].description == null) ? data[i].nom : data[i]
+                    //     .description,
+                    // end: data[i].date_fin,
+                    // className: className
+                    id: A(),
+                    title: data[i].name_event,
+                    start: data[i].date_start_event + ' ' + data[i].time_start_event,
+                    end: data[i].date_end_event + ' ' + data[i].time_end_event,
+                    description: data[i].description_event,
+                    className: '',
+                    location: data[i].location_event
+                }
             }
 
+        }
 
-            console.log(events)
-
+        events[data.length] = {
+            // title: data[i].nom,
+            // start: data[i].date_debut,
+            // description: (data[i].description == null) ? data[i].nom : data[i]
+            //     .description,
+            // end: data[i].date_fin,
+            // className: className
+            id: A(),
+            title: 'Author birthday',
+            start: '2002-02-10 07:00',
+            end: '2002-02-10 19:00',
+            description: 'Author birthday',
+            className: '',
+            location: 'Cotonou'
         }
 
         "use strict";
