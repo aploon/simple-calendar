@@ -75,8 +75,8 @@ License: For each use you must have a valid license purchased only from above li
 						<!--end::sidebar mobile toggle-->
 						<!--begin::Mobile logo-->
 						<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
-							<a href="../../demo1/dist/index.html" class="d-lg-none">
-								<img alt="Logo" src="assets/media/logos/default-small.svg" class="h-30px" />
+							<a href="" class="d-lg-none">
+								<img alt="Logo" src="assets/media/logos/logo_white.png" class="h-40px" />
 							</a>
 						</div>
 						<!--end::Mobile logo-->

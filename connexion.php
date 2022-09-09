@@ -44,6 +44,7 @@ if(isset($_SESSION['name'])){
     //Si le mot de passe de l'admin correspond 
     if ($password == $data['password_user']) {
 
+      $_SESSION['id'] = $data['id_user'];
       $_SESSION['name'] = $data['name_user'];
       $_SESSION['email'] = $data['email_user'];
       $_SESSION['password'] = $data['password_user'];
