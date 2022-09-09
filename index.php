@@ -16,7 +16,7 @@ Contact: support@keenthemes.com
 Follow: www.twitter.com/keenthemes
 Dribbble: www.dribbble.com/keenthemes
 Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+License: 1a29d6a8-5916-447d-96a1-860d0598de5b
 -->
 <html lang="en">
 <!--begin::Head-->
