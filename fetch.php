@@ -10,6 +10,8 @@ if(isset($_POST['calendar_event_name'])){
     $location_event = $_POST['calendar_event_location'];
     $date_start_event = $_POST['calendar_event_start_date'];
     $date_end_event = $_POST['calendar_event_end_date'];
+    $time_start_event = date('H:m', strtotime($_POST['calendar_event_start_time']));
+    $time_end_event = date('H:m', strtotime($_POST['calendar_event_end_time']));
 
     if(isset($_POST['calendar_event_allday'])){
         $time_start_event = null;

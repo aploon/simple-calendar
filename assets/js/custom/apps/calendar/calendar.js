@@ -1,6 +1,6 @@
 $.ajax({
     url: "fetch.php",
-    method: "GET",
+    method: "POST",
     dataType: "json",
     success: function (data) {
 
@@ -35,7 +35,7 @@ $.ajax({
                     start: data[i].date_start_event,
                     end: data[i].date_end_event,
                     description: data[i].description_event,
-                    className: '',
+                    className: 'fc-event-danger fc-event-solid-light',
                     location: data[i].location_event
                 }
 
@@ -52,7 +52,7 @@ $.ajax({
                     start: data[i].date_start_event + ' ' + data[i].time_start_event,
                     end: data[i].date_end_event + ' ' + data[i].time_end_event,
                     description: data[i].description_event,
-                    className: '',
+                    className: 'fc-event-danger fc-event-solid-light',
                     location: data[i].location_event
                 }
             }
